@@ -80,6 +80,10 @@
   "reason": "API demos of pinneapple_data that write Zarr stores and stream them (loaders, prefetch threads, GPU pinning); 05 needs cadquery; nothing is computed or committed",
   "status": "not_convertible"
  },
+ "dc_microgrid_twin": {
+  "domain": "power systems",
+  "notes": "microgrid_twin: twin.dc_microgrid + examples.flatten, compared with the committed _out/summary.json (diagnosis accuracy, cases with a false alarm); quick = without the fast-model study"
+ },
  "design_from_intent": {
   "domain": "design",
   "notes": "the loop's full check needs NVIDIA Newton and the bracket's CalculiX + gmsh; without Newton that verification does not run"
@@ -185,6 +189,11 @@
  "lbm": {
   "domain": "fluid dynamics",
   "notes": "lbm.sphere_stokes and lbm.sphere_drag (FP32 / FP16 storage) wrap pinneapple_simulation.numerical_solvers.lbm_tunnel, compared with docs/core_concepts/lbm_wind_tunnel.md (Stokes error, Cd FP32 / FP16, Schiller-Naumann, bytes per cell); the full run is about an hour on 4 idle cores, so the quick configuration (smaller sphere and tunnel, fewer steps) compares only the configuration-independent numbers (Schiller-Naumann, bytes per cell); the full configuration has not been run here"
+ },
+ "mafaulda_unbalance_pilot": {
+  "domain": "vibration diagnostics",
+  "status": "needs",
+  "reason": "needs the MAFAULDA normal and imbalance archives (2.6 GB from SMT/COPPE/UFRJ, not redistributed here); pilot.py runs pinneapple_analysis.inspection.rotating.unbalance_study on them, and the committed _out/report.md and _out/results.json are its measured result"
  },
  "meshgraphnet": {
   "domain": "neural operators",

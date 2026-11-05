@@ -1,0 +1,129 @@
+{
+ "schema": "pinneapple.experiment/1",
+ "id": "examples/dc_microgrid_twin",
+ "title": "DC microgrid twin: process, sensor or model?",
+ "description": "A four-bus DC microgrid twin that tells a loose joint or a degraded converter from a drifting or noisy sensor from a fast model outside its domain, with whitened physics residuals, a likelihood ratio per fault, a Kalman filter and isolability angles; a PINN fast model against a data-only network and POD + GP at equal budget; confusion matrix on controlled cases.",
+ "domain": "power systems",
+ "methods": [
+  "DC power flow (droop, MPPT, constant-power load)",
+  "structured residuals",
+  "generalised likelihood ratio",
+  "EKF",
+  "POD-GPR",
+  "PINN"
+ ],
+ "modules": [
+  "pinneapple_systems.digital_twin.dc_microgrid",
+  "pinneapple_neural.trainer.graybox",
+  "pinneapple_analysis.state_estimation.kalman"
+ ],
+ "params": {},
+ "scripts": [],
+ "metrics": [
+  {
+   "name": "cause_accuracy",
+   "value": 1.0,
+   "unit": "fraction",
+   "how": "80 controlled cases"
+  },
+  {
+   "name": "cases_with_false_alarm",
+   "value": 1.0,
+   "unit": "cases",
+   "how": "alarm before the fault, or any alarm on a healthy case"
+  },
+  {
+   "name": "smallest_isolation_angle",
+   "value": 33.51921621061551,
+   "unit": "deg",
+   "how": "median over 64 operating points, closest pair of fault hypotheses"
+  },
+  {
+   "name": "pinn_box_inside_error_N8",
+   "value": 1.4356685950003722,
+   "unit": "sensor sigmas",
+   "how": "median RMS error on 200 held-out points, 8 labels, median over 3 seeds"
+  },
+  {
+   "name": "mlp_data_inside_error_N8",
+   "value": 13.395638111308559,
+   "unit": "sensor sigmas",
+   "how": "median RMS error on 200 held-out points, 8 labels, median over 3 seeds"
+  },
+  {
+   "name": "pod_gp_inside_error_N8",
+   "value": 49.40962290789321,
+   "unit": "sensor sigmas",
+   "how": "median RMS error on 200 held-out points, 8 labels, median over 3 seeds"
+  }
+ ],
+ "checks": [
+  {
+   "name": "energy balance of the reference simulator",
+   "passed": true,
+   "value": 1.4242118595575448e-09,
+   "reference": null,
+   "rtol": null,
+   "atol": null,
+   "max": 0.001,
+   "min": null,
+   "detail": "",
+   "kind": "physics"
+  },
+  {
+   "name": "structural signatures all distinct",
+   "passed": true,
+   "value": null,
+   "reference": null,
+   "rtol": null,
+   "atol": null,
+   "max": null,
+   "min": null,
+   "detail": "",
+   "kind": "physics"
+  },
+  {
+   "name": "trust report decision",
+   "passed": true,
+   "value": null,
+   "reference": null,
+   "rtol": null,
+   "atol": null,
+   "max": null,
+   "min": null,
+   "detail": "APPROVED []",
+   "kind": "verification"
+  }
+ ],
+ "files": {
+  "figures": [
+   "_out/confusion.png",
+   "_out/isolability.png",
+   "_out/surrogates.png",
+   "_out/showcase.png"
+  ],
+  "videos": [],
+  "viewers": [],
+  "data": [
+   "_out/report.md"
+  ]
+ },
+ "links": {
+  "guide": "docs/guides/dc_microgrid_twin.md",
+  "script": "examples/dc_microgrid_twin/microgrid_twin.py"
+ },
+ "references": [],
+ "status": "not curated",
+ "lab": {},
+ "provenance": {
+  "source": "experiment()",
+  "git": "208a3da",
+  "created": "2026-11-03T23:12:21Z",
+  "seconds": 139.408,
+  "error": null,
+  "environment": {
+   "python": "3.13.18",
+   "platform": "Linux-6.18.44-fc-v233-x86_64-with-glibc2.39"
+  }
+ }
+}

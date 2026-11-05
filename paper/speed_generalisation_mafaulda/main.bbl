@@ -1,0 +1,93 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{randall2011bearing}
+R.~B. Randall, J.~Antoni, Rolling element bearing diagnostics---{A} tutorial,
+  Mechanical Systems and Signal Processing 25~(2) (2011) 485--520.
+
+\bibitem{fyfe1997cot}
+K.~R. Fyfe, E.~D.~S. Munck, Analysis of computed order tracking, Mechanical
+  Systems and Signal Processing 11~(2) (1997) 187--205, vERIFY.
+
+\bibitem{mafaulda}
+{Signals, Multimedia, and Telecommunications Laboratory, COPPE/Poli/UFRJ},
+  {MAFAULDA}: Machinery fault database,
+  \url{https://www02.smt.ufrj.br/~offshore/mfs/page_01.html}, accessed 3
+  November 2026.
+
+\bibitem{rigas2024kan}
+S.~Rigas, M.~Papachristou, I.~Sotiropoulos, G.~Alexandridis, Explainable fault
+  and severity classification for rolling element bearings using
+  {K}olmogorov--{A}rnold networks, arXiv:2412.01322. VERIFY journal version
+  (2024).
+
+\bibitem{shen2023hnn}
+J.~Shen, J.~Chowdhury, S.~Banerjee, G.~Terejanu, Machine fault classification
+  using {H}amiltonian neural networks, in: Proceedings of the 12th
+  International Conference on Pattern Recognition Applications and Methods
+  (ICPRAM), 2023, arXiv:2301.02243. VERIFY first names and pages.
+
+\bibitem{smith2015cwru}
+W.~A. Smith, R.~B. Randall, Rolling element bearing diagnostics using the
+  {C}ase {W}estern {R}eserve {U}niversity data: {A} benchmark study, Mechanical
+  Systems and Signal Processing 64--65 (2015) 100--131.
+
+\bibitem{zhao2020benchmark}
+Z.~Zhao, T.~Li, J.~Wu, C.~Sun, S.~Wang, R.~Yan, X.~Chen, Deep learning
+  algorithms for rotating machinery intelligent diagnosis: An open source
+  benchmark study, ISA Transactions 107 (2020) 224--255, vERIFY.
+
+\bibitem{kapoor2023leakage}
+S.~Kapoor, A.~Narayanan, Leakage and the reproducibility crisis in
+  machine-learning-based science, Patterns 4~(9) (2023) 100804.
+
+\bibitem{li2021fno}
+Z.~Li, N.~Kovachki, K.~Azizzadenesheli, B.~Liu, K.~Bhattacharya, A.~Stuart,
+  A.~Anandkumar, Fourier neural operator for parametric partial differential
+  equations, in: International Conference on Learning Representations (ICLR),
+  2021.
+
+\bibitem{gao2025frequency}
+Gao, Qi, Sun, Zhu, Chen, Dong, Sun, Cross-domain open-set fault diagnosis for
+  rotating machinery based on frequency-aware model with neighborhood
+  invariance, IEEE Internet of Things JournalVERIFY full author names, volume
+  and pages (title, journal and date from Crossref) (2025).
+\newblock \href {https://doi.org/10.1109/JIOT.2025.3565810}
+  {\path{doi:10.1109/JIOT.2025.3565810}}.
+
+\bibitem{comfaulda}
+D.~H. C. d. S.~S. Martins, D.~Pestana-Viana, A.~A. Lima, R.~H.~R.
+  Guti{\'e}rrez, L.~Vaz, D.~B. Haddad, {COMFAULDA}: Composed fault dataset,
+  \url{https://zenodo.org/records/8208454} (2022).
+\newblock \href {https://doi.org/10.21227/89ye-ap56}
+  {\path{doi:10.21227/89ye-ap56}}.
+
+\bibitem{pinneapple}
+{PINNeAPPle}: physics ai library, rotating-machinery diagnosis modules and
+  results,
+  \url{https://github.com/jirayasama89/PINNeAPPle/tree/claude/laughing-carson-yotf6f},
+  code, result files and research log of this study; to be archived with a DOI
+  (e.g. Zenodo) before submission (2026).
+
+\bibitem{breiman2001rf}
+L.~Breiman, Random forests, Machine Learning 45~(1) (2001) 5--32.
+
+\bibitem{liu2024kan}
+Z.~Liu, Y.~Wang, S.~Vaidya, F.~Ruehle, J.~Halverson, M.~Solja{\v{c}}i{\'c},
+  T.~Y. Hou, M.~Tegmark, {KAN}: {K}olmogorov--{A}rnold networks,
+  arXiv:2404.19756 (2024).
+
+\bibitem{greydanus2019hnn}
+S.~Greydanus, M.~Dzamba, J.~Yosinski, Hamiltonian neural networks, in: Advances
+  in Neural Information Processing Systems, Vol.~32, 2019.
+
+\bibitem{perez2018film}
+E.~Perez, F.~Strub, H.~de~Vries, V.~Dumoulin, A.~Courville, {FiLM}: Visual
+  reasoning with a general conditioning layer, in: Proceedings of the AAAI
+  Conference on Artificial Intelligence, Vol.~32, 2018.
+
+\end{thebibliography}

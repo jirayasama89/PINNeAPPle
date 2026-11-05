@@ -1,0 +1,350 @@
+{
+ "n_runs": 382,
+ "levels_g": [
+  0.0,
+  6.0,
+  10.0,
+  15.0,
+  20.0,
+  25.0,
+  30.0,
+  35.0
+ ],
+ "speed_range_hz": [
+  11.781303024478445,
+  60.51687604958631
+ ],
+ "speed_bands_hz": [
+  11.781303024478445,
+  20.201140321334186,
+  27.922955069862752,
+  35.737869044840366,
+  43.511680256367285,
+  51.29452771078886,
+  60.51687604958631
+ ],
+ "criteria": {
+  "T1_min_R2_linear": 0.9,
+  "T1_quadratic_gain_max": 0.01,
+  "T2_max_mae_g": 2.0,
+  "T3_interp_max_mae_g": 3.0
+ },
+ "preregistered": [
+  "spline",
+  "modal3",
+  "modal4",
+  "amplitude",
+  "rf_phase",
+  "rf_amplitude"
+ ],
+ "exploratory": [
+  "nuisance_mass_angle",
+  "nuisance_tach",
+  "modal3_rephased",
+  "modal4_rephased"
+ ],
+ "T1_linearity": {
+  "heldout_R2_linear": 0.8899858335379988,
+  "heldout_R2_quadratic": 0.9433363777189687,
+  "per_channel_R2_linear": [
+   0.8535515387121911,
+   0.8979492093558652,
+   0.8879759708897798,
+   0.2979623386002693,
+   0.5878508106969322,
+   0.8971365115544875
+  ]
+ },
+ "level_unbalance": {
+  "levels": [
+   0.0,
+   6.0,
+   10.0,
+   15.0,
+   20.0,
+   25.0,
+   30.0,
+   35.0
+  ],
+  "magnitude": [
+   0.0,
+   6.624314673227153,
+   11.691560481995474,
+   16.293068403715672,
+   20.653925741327843,
+   25.34781204664706,
+   30.263609981545954,
+   35.0
+  ],
+  "angle_deg": [
+   0.0,
+   43.775332645178295,
+   37.82923922668684,
+   33.56547856583086,
+   28.899338065740384,
+   26.154768523478747,
+   22.288447076564957,
+   0.0
+  ],
+  "R2": 0.9537814183774438
+ },
+ "T2_seen_speeds": {
+  "spline": {
+   "mae_g": 2.667365256540791,
+   "rmse_g": 4.5225179829478535,
+   "within_2g": 0.6335078534031413,
+   "level_accuracy": 0.7382198952879581,
+   "n": 382
+  },
+  "modal3": {
+   "mae_g": 2.7408561991923412,
+   "rmse_g": 4.678750855712999,
+   "within_2g": 0.5968586387434555,
+   "level_accuracy": 0.7198952879581152,
+   "n": 382
+  },
+  "modal4": {
+   "mae_g": 2.7169312941898505,
+   "rmse_g": 4.582950851473084,
+   "within_2g": 0.5916230366492147,
+   "level_accuracy": 0.7198952879581152,
+   "n": 382
+  },
+  "amplitude": {
+   "mae_g": 1.7037284963634793,
+   "rmse_g": 2.8023101202477676,
+   "within_2g": 0.725130890052356,
+   "level_accuracy": 0.8455497382198953,
+   "n": 382
+  },
+  "rf_phase": {
+   "mae_g": 1.8023886084102052,
+   "rmse_g": 3.0499195018638185,
+   "within_2g": 0.7068062827225131,
+   "level_accuracy": 0.7591623036649214,
+   "n": 382
+  },
+  "rf_amplitude": {
+   "mae_g": 1.7082030587758663,
+   "rmse_g": 2.894934787014178,
+   "within_2g": 0.7329842931937173,
+   "level_accuracy": 0.7774869109947644,
+   "n": 382
+  },
+  "nuisance_mass_angle": {
+   "mae_g": 2.221736617869102,
+   "rmse_g": 3.4385060080311285,
+   "within_2g": 0.6178010471204188,
+   "level_accuracy": 0.743455497382199,
+   "n": 382
+  },
+  "nuisance_tach": {
+   "mae_g": 2.020304873209502,
+   "rmse_g": 3.465321227658454,
+   "within_2g": 0.680628272251309,
+   "level_accuracy": 0.7774869109947644,
+   "n": 382
+  },
+  "modal3_rephased": {
+   "mae_g": 2.2438166411773963,
+   "rmse_g": 4.1189841820918245,
+   "within_2g": 0.6544502617801047,
+   "level_accuracy": 0.7670157068062827,
+   "n": 382
+  },
+  "modal4_rephased": {
+   "mae_g": 2.087598954830224,
+   "rmse_g": 3.8678682496534686,
+   "within_2g": 0.6701570680628273,
+   "level_accuracy": 0.7827225130890052,
+   "n": 382
+  }
+ },
+ "T3_unseen_speed_bands": {
+  "spline": {
+   "interpolation": {
+    "mae_g": 3.905934825688943,
+    "rmse_g": 5.370698249589014,
+    "within_2g": 0.4094488188976378,
+    "level_accuracy": 0.5039370078740157,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 6.9443588140124,
+    "rmse_g": 9.977411720137203,
+    "within_2g": 0.3203125,
+    "level_accuracy": 0.4140625,
+    "n": 128
+   }
+  },
+  "modal3": {
+   "interpolation": {
+    "mae_g": 9.101305873123875,
+    "rmse_g": 12.083637684064628,
+    "within_2g": 0.16141732283464566,
+    "level_accuracy": 0.2559055118110236,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 6.944263709001034,
+    "rmse_g": 9.658670105634283,
+    "within_2g": 0.203125,
+    "level_accuracy": 0.265625,
+    "n": 128
+   }
+  },
+  "modal4": {
+   "interpolation": {
+    "mae_g": 8.531836992169596,
+    "rmse_g": 10.919362056838255,
+    "within_2g": 0.18503937007874016,
+    "level_accuracy": 0.2440944881889764,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 7.339924932481949,
+    "rmse_g": 11.137607771751709,
+    "within_2g": 0.3671875,
+    "level_accuracy": 0.4375,
+    "n": 128
+   }
+  },
+  "amplitude": {
+   "interpolation": {
+    "mae_g": 2.2979063411903766,
+    "rmse_g": 3.1947355641941058,
+    "within_2g": 0.6062992125984252,
+    "level_accuracy": 0.6968503937007874,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 7.978376986418207,
+    "rmse_g": 12.346516145707945,
+    "within_2g": 0.34375,
+    "level_accuracy": 0.453125,
+    "n": 128
+   }
+  },
+  "rf_phase": {
+   "interpolation": {
+    "mae_g": 3.8317821444194475,
+    "rmse_g": 5.320669868288664,
+    "within_2g": 0.41338582677165353,
+    "level_accuracy": 0.452755905511811,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 9.396228205605158,
+    "rmse_g": 13.80194632170809,
+    "within_2g": 0.2890625,
+    "level_accuracy": 0.3203125,
+    "n": 128
+   }
+  },
+  "rf_amplitude": {
+   "interpolation": {
+    "mae_g": 2.9866939054493193,
+    "rmse_g": 4.582958943522963,
+    "within_2g": 0.5196850393700787,
+    "level_accuracy": 0.5511811023622047,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 7.593774166046628,
+    "rmse_g": 11.372906898249017,
+    "within_2g": 0.3046875,
+    "level_accuracy": 0.3125,
+    "n": 128
+   }
+  },
+  "nuisance_mass_angle": {
+   "interpolation": {
+    "mae_g": 3.547396059164192,
+    "rmse_g": 4.862141625222575,
+    "within_2g": 0.43700787401574803,
+    "level_accuracy": 0.5236220472440944,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 7.162365052551248,
+    "rmse_g": 10.118271001802261,
+    "within_2g": 0.3125,
+    "level_accuracy": 0.3828125,
+    "n": 128
+   }
+  },
+  "nuisance_tach": {
+   "interpolation": {
+    "mae_g": 3.2272314546259047,
+    "rmse_g": 4.55607165618101,
+    "within_2g": 0.5118110236220472,
+    "level_accuracy": 0.594488188976378,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 7.314397406256597,
+    "rmse_g": 10.891195123978227,
+    "within_2g": 0.3046875,
+    "level_accuracy": 0.3828125,
+    "n": 128
+   }
+  },
+  "modal3_rephased": {
+   "interpolation": {
+    "mae_g": 9.49997469524714,
+    "rmse_g": 12.86094945503823,
+    "within_2g": 0.21653543307086615,
+    "level_accuracy": 0.25196850393700787,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 9.300183219538768,
+    "rmse_g": 13.85411042520634,
+    "within_2g": 0.2109375,
+    "level_accuracy": 0.2734375,
+    "n": 128
+   }
+  },
+  "modal4_rephased": {
+   "interpolation": {
+    "mae_g": 9.677861552036614,
+    "rmse_g": 12.678248968513389,
+    "within_2g": 0.13385826771653545,
+    "level_accuracy": 0.16929133858267717,
+    "n": 254
+   },
+   "extrapolation": {
+    "mae_g": 8.377700485536172,
+    "rmse_g": 12.61814907415439,
+    "within_2g": 0.1953125,
+    "level_accuracy": 0.3828125,
+    "n": 128
+   }
+  }
+ },
+ "modal3_all_runs": {
+  "natural_frequencies_hz": [
+   9.395782983671104,
+   18.80199368373805,
+   38.187848016944876
+  ],
+  "damping_ratios": [
+   0.0395944299545467,
+   0.2512715008789511,
+   0.11735940138366578
+  ],
+  "R2": 0.8972655793077635
+ },
+ "verdict": {
+  "checks": {
+   "linear_in_mass": false,
+   "seen_speeds_physics_within_2g": false,
+   "unseen_speeds_physics_within_3g": false,
+   "modal_beats_amplitude_unseen": false
+  },
+  "go": false,
+  "best_physics_seen": "spline",
+  "best_physics_unseen": "spline"
+ },
+ "seconds": 496.56299826200006
+}

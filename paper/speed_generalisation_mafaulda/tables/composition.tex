@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Combined faults recognised from single-fault training on COMFAULDA: one detector per fault type trained on 1018 normal and single-fault runs, tested on 1143 combined-fault runs never seen. Exact match: all three labels right.}
+\label{tab:composition}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Model & Exact match & F1 unbalance & F1 horizontal & F1 vertical \\
+\midrule
+RF & 0.015 & 0.86 & 0.38 & 0.42 \\
+MLP & 0.052 & 0.81 & 0.45 & 0.53 \\
+KAN & 0.050 & 0.76 & 0.45 & 0.47 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -11,7 +11,7 @@ import numpy as np
 from pinneapple_core.workflows import StepFailed
 
 from ..registry import Param, Port, node
-from ..runtime import load_artifact
+from ..runtime import artifact, load_artifact
 from ._common import bounds_of, need_problem, save_solution, system_of
 
 
@@ -276,3 +276,30 @@ def _dashboard(ctx, h, s, names, sensors, alerts, fault):
             ax.axvline(float(fault["t"]), color="k", lw=0.7, ls=":")
     ctx.figure(fig, "twin_dashboard", "sensors vs twin, calibrated coefficients (+-2 sd), consistency; red: alerts, "
                                       "dotted: injected change")
+
+
+@node("twin.dc_microgrid", "DC microgrid twin: changed network, wrong sensor or model out of its domain",
+      category="Digital twin",
+      outputs=[Port("report", "report"), Port("figure", "figure"), Port("metrics", "metrics")],
+      params=[Param("n_per_kind", "int", 20, minimum=1, maximum=200, help="controlled cases per kind"),
+              Param("surrogates", "bool", True, help="also compare the PINN, data-only and POD + GP fast models at "
+                                                     "equal budget"),
+              Param("workers", "int", 4, minimum=1, maximum=32)],
+      calls="pinneapple_systems.digital_twin.dc_microgrid.run_study",
+      tags=("digital twin", "fault diagnosis", "power systems", "microgrid", "kalman", "pinn", "verification"))
+def dc_microgrid_twin(ctx, inputs, params):
+    """A four-bus DC microgrid (droop converters, PV in MPPT, resistive and constant-power loads): whitened physics
+    residuals and a likelihood ratio per fault tell a loose joint or a degraded converter from a drifting or noisy
+    sensor from a fast model outside its domain; Kalman sizes; isolability angles; a PINN fast model against a
+    data-only network and POD + GP at equal budget; trust report."""
+    from pinneapple_systems.digital_twin.dc_microgrid import run_study
+    out = run_study(ctx.workdir / "dc_microgrid", n_per_kind=int(params["n_per_kind"]),
+                    surrogates=bool(params["surrogates"]), workers=int(params["workers"]), log=ctx.log)
+    b = out["benchmark"]
+    ctx.table("Confusion (rows: true, columns: diagnosed)", ["true"] + b["kinds"],
+              [[k] + row for k, row in zip(b["kinds"], b["confusion"], strict=True)])
+    ctx.summary(f"{out['trust'].decisao}: cause right in {100 * b['accuracy']:.0f} % of {b['n_cases']} controlled "
+                f"cases, {b['cases_with_false_alarm']} with a false alarm")
+    return {"report": artifact(out["files"]["report"], "md"), "figure": artifact(out["files"]["confusion"], "png"),
+            "metrics": {"decision": out["trust"].decisao, "accuracy": b["accuracy"], "confusion": b["confusion"],
+                        "isolation": b["isolation"], "cases_with_false_alarm": b["cases_with_false_alarm"]}}

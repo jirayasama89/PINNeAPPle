@@ -1,0 +1,880 @@
+{
+ "3": {
+  "unbalance": {
+   "task": "unbalance",
+   "classes": [
+    "normal",
+    "imbalance"
+   ],
+   "n": 382,
+   "counts": [
+    49,
+    333
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.9204204926045223,
+     "accuracy": 0.9659685863874345,
+     "per_split_macro_f1": {
+      "speed_low_12-28Hz": 0.935270132517839,
+      "speed_mid_28-44Hz": 1.0,
+      "speed_high_44-61Hz": 0.8005194805194805
+     },
+     "confusion": [
+      [
+       40,
+       9
+      ],
+      [
+       4,
+       329
+      ]
+     ],
+     "seconds": 224.55551108599684
+    }
+   }
+  },
+  "misalignment": {
+   "task": "misalignment",
+   "classes": [
+    "normal",
+    "horizontal-misalignment",
+    "vertical-misalignment"
+   ],
+   "n": 547,
+   "counts": [
+    49,
+    197,
+    301
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.7541595127135966,
+     "accuracy": 0.8574040219378428,
+     "per_split_macro_f1": {
+      "speed_low_12-28Hz": 0.6219873934000741,
+      "speed_mid_28-44Hz": 0.833073839435914,
+      "speed_high_44-61Hz": 0.8756452045201062
+     },
+     "confusion": [
+      [
+       27,
+       16,
+       6
+      ],
+      [
+       22,
+       160,
+       15
+      ],
+      [
+       14,
+       5,
+       282
+      ]
+     ],
+     "seconds": 303.57501165699796
+    }
+   }
+  },
+  "bearings": {
+   "task": "bearings",
+   "classes": [
+    "normal",
+    "underhang/ball_fault",
+    "underhang/cage_fault",
+    "underhang/outer_race",
+    "overhang/ball_fault",
+    "overhang/cage_fault",
+    "overhang/outer_race"
+   ],
+   "n": 1064,
+   "counts": [
+    49,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.8293110337448741,
+     "accuracy": 0.825187969924812,
+     "per_split_macro_f1": {
+      "speed_low_12-27Hz": 0.7507437800502265,
+      "speed_mid_27-41Hz": 0.991451930020461,
+      "speed_high_41-61Hz": 0.7353898847690395
+     },
+     "confusion": [
+      [
+       36,
+       0,
+       1,
+       0,
+       0,
+       10,
+       2
+      ],
+      [
+       2,
+       124,
+       8,
+       3,
+       0,
+       12,
+       0
+      ],
+      [
+       4,
+       1,
+       147,
+       3,
+       0,
+       23,
+       8
+      ],
+      [
+       0,
+       0,
+       5,
+       169,
+       0,
+       10,
+       0
+      ],
+      [
+       0,
+       0,
+       1,
+       0,
+       135,
+       1,
+       0
+      ],
+      [
+       4,
+       0,
+       11,
+       16,
+       0,
+       136,
+       15
+      ],
+      [
+       0,
+       1,
+       5,
+       0,
+       0,
+       40,
+       131
+      ]
+     ],
+     "seconds": 561.9668406669989
+    }
+   }
+  },
+  "all": {
+   "task": "all",
+   "classes": [
+    "normal",
+    "imbalance",
+    "horizontal-misalignment",
+    "vertical-misalignment",
+    "underhang/ball_fault",
+    "underhang/cage_fault",
+    "underhang/outer_race",
+    "overhang/ball_fault",
+    "overhang/cage_fault",
+    "overhang/outer_race"
+   ],
+   "n": 1895,
+   "counts": [
+    49,
+    333,
+    197,
+    301,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.717590446332199,
+     "accuracy": 0.7234828496042216,
+     "per_split_macro_f1": {
+      "speed_low_12-27Hz": 0.6288824797379247,
+      "speed_mid_27-42Hz": 0.9587968535726341,
+      "speed_high_42-61Hz": 0.6005876285800225
+     },
+     "confusion": [
+      [
+       27,
+       1,
+       5,
+       0,
+       0,
+       12,
+       0,
+       0,
+       2,
+       2
+      ],
+      [
+       31,
+       252,
+       5,
+       3,
+       0,
+       33,
+       4,
+       0,
+       2,
+       3
+      ],
+      [
+       29,
+       6,
+       118,
+       0,
+       2,
+       40,
+       1,
+       0,
+       1,
+       0
+      ],
+      [
+       39,
+       12,
+       13,
+       176,
+       0,
+       45,
+       6,
+       0,
+       6,
+       4
+      ],
+      [
+       16,
+       0,
+       1,
+       0,
+       122,
+       2,
+       0,
+       1,
+       0,
+       7
+      ],
+      [
+       38,
+       3,
+       0,
+       0,
+       1,
+       136,
+       1,
+       0,
+       0,
+       7
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       163,
+       1,
+       4,
+       12
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       4,
+       2,
+       4,
+       117,
+       0,
+       10
+      ],
+      [
+       9,
+       1,
+       8,
+       0,
+       0,
+       35,
+       3,
+       1,
+       122,
+       3
+      ],
+      [
+       12,
+       0,
+       1,
+       0,
+       0,
+       21,
+       0,
+       0,
+       5,
+       138
+      ]
+     ],
+     "seconds": 990.7795031570022
+    }
+   }
+  },
+  "comfaulda7": {
+   "task": "comfaulda7",
+   "classes": [
+    "normal",
+    "unbalance",
+    "horizontal",
+    "vertical",
+    "unbalance+horizontal",
+    "unbalance+vertical",
+    "horizontal+vertical"
+   ],
+   "n": 2161,
+   "counts": [
+    245,
+    336,
+    195,
+    242,
+    351,
+    351,
+    441
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.5966572667547475,
+     "accuracy": 0.6029615918556224,
+     "per_split_macro_f1": {
+      "speed_low_12-27Hz": 0.4502713370920148,
+      "speed_mid_27-42Hz": 0.7930868453527309,
+      "speed_high_42-61Hz": 0.5399760639577644
+     },
+     "confusion": [
+      [
+       140,
+       5,
+       61,
+       28,
+       0,
+       1,
+       10
+      ],
+      [
+       17,
+       185,
+       28,
+       41,
+       43,
+       17,
+       5
+      ],
+      [
+       14,
+       1,
+       125,
+       29,
+       2,
+       7,
+       17
+      ],
+      [
+       13,
+       2,
+       18,
+       172,
+       7,
+       10,
+       20
+      ],
+      [
+       33,
+       37,
+       40,
+       25,
+       191,
+       17,
+       8
+      ],
+      [
+       11,
+       21,
+       10,
+       52,
+       23,
+       226,
+       8
+      ],
+      [
+       37,
+       1,
+       71,
+       59,
+       5,
+       4,
+       264
+      ]
+     ],
+     "seconds": 1114.410069005
+    }
+   }
+  }
+ },
+ "4": {
+  "unbalance": {
+   "task": "unbalance",
+   "classes": [
+    "normal",
+    "imbalance"
+   ],
+   "n": 382,
+   "counts": [
+    49,
+    333
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.9267638036809815,
+     "accuracy": 0.9633507853403142,
+     "per_split_macro_f1": {
+      "speed_low_12-28Hz": 0.8141722408026756,
+      "speed_mid_28-44Hz": 1.0,
+      "speed_high_44-61Hz": 1.0
+     },
+     "confusion": [
+      [
+       49,
+       0
+      ],
+      [
+       14,
+       319
+      ]
+     ],
+     "seconds": 210.60529911199774
+    }
+   }
+  },
+  "misalignment": {
+   "task": "misalignment",
+   "classes": [
+    "normal",
+    "horizontal-misalignment",
+    "vertical-misalignment"
+   ],
+   "n": 547,
+   "counts": [
+    49,
+    197,
+    301
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.7756390044314333,
+     "accuracy": 0.8446069469835467,
+     "per_split_macro_f1": {
+      "speed_low_12-28Hz": 0.5492328138214329,
+      "speed_mid_28-44Hz": 1.0,
+      "speed_high_44-61Hz": 0.8768638768638768
+     },
+     "confusion": [
+      [
+       47,
+       2,
+       0
+      ],
+      [
+       45,
+       146,
+       6
+      ],
+      [
+       28,
+       4,
+       269
+      ]
+     ],
+     "seconds": 276.8298322519986
+    }
+   }
+  },
+  "bearings": {
+   "task": "bearings",
+   "classes": [
+    "normal",
+    "underhang/ball_fault",
+    "underhang/cage_fault",
+    "underhang/outer_race",
+    "overhang/ball_fault",
+    "overhang/cage_fault",
+    "overhang/outer_race"
+   ],
+   "n": 1064,
+   "counts": [
+    49,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.8408035650100494,
+     "accuracy": 0.8533834586466166,
+     "per_split_macro_f1": {
+      "speed_low_12-27Hz": 0.8055805530391013,
+      "speed_mid_27-41Hz": 0.991410174187693,
+      "speed_high_41-61Hz": 0.7467168763726677
+     },
+     "confusion": [
+      [
+       40,
+       1,
+       2,
+       0,
+       0,
+       2,
+       4
+      ],
+      [
+       3,
+       143,
+       2,
+       0,
+       1,
+       0,
+       0
+      ],
+      [
+       10,
+       3,
+       149,
+       2,
+       0,
+       4,
+       18
+      ],
+      [
+       0,
+       0,
+       1,
+       183,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       9,
+       0,
+       128,
+       0,
+       0
+      ],
+      [
+       17,
+       4,
+       18,
+       7,
+       0,
+       127,
+       9
+      ],
+      [
+       0,
+       6,
+       23,
+       3,
+       0,
+       7,
+       138
+      ]
+     ],
+     "seconds": 559.8519110140005
+    }
+   }
+  },
+  "all": {
+   "task": "all",
+   "classes": [
+    "normal",
+    "imbalance",
+    "horizontal-misalignment",
+    "vertical-misalignment",
+    "underhang/ball_fault",
+    "underhang/cage_fault",
+    "underhang/outer_race",
+    "overhang/ball_fault",
+    "overhang/cage_fault",
+    "overhang/outer_race"
+   ],
+   "n": 1895,
+   "counts": [
+    49,
+    333,
+    197,
+    301,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.8307453423454426,
+     "accuracy": 0.8569920844327177,
+     "per_split_macro_f1": {
+      "speed_low_12-27Hz": 0.7336572461364701,
+      "speed_mid_27-42Hz": 0.9662609319219637,
+      "speed_high_42-61Hz": 0.7904036983085845
+     },
+     "confusion": [
+      [
+       34,
+       1,
+       10,
+       0,
+       0,
+       4,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       4,
+       305,
+       0,
+       11,
+       2,
+       11,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       12,
+       8,
+       160,
+       2,
+       0,
+       13,
+       0,
+       0,
+       0,
+       2
+      ],
+      [
+       1,
+       11,
+       1,
+       271,
+       0,
+       17,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       1,
+       0,
+       134,
+       3,
+       0,
+       1,
+       0,
+       9
+      ],
+      [
+       16,
+       1,
+       3,
+       2,
+       1,
+       151,
+       1,
+       0,
+       0,
+       11
+      ],
+      [
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       165,
+       0,
+       0,
+       18
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       3,
+       127,
+       0,
+       6
+      ],
+      [
+       27,
+       4,
+       3,
+       0,
+       0,
+       17,
+       2,
+       0,
+       122,
+       7
+      ],
+      [
+       1,
+       3,
+       3,
+       0,
+       0,
+       14,
+       0,
+       0,
+       1,
+       155
+      ]
+     ],
+     "seconds": 1034.483421768
+    }
+   }
+  },
+  "comfaulda7": {
+   "task": "comfaulda7",
+   "classes": [
+    "normal",
+    "unbalance",
+    "horizontal",
+    "vertical",
+    "unbalance+horizontal",
+    "unbalance+vertical",
+    "horizontal+vertical"
+   ],
+   "n": 2161,
+   "counts": [
+    245,
+    336,
+    195,
+    242,
+    351,
+    351,
+    441
+   ],
+   "results": {
+    "speed/ocfno": {
+     "macro_f1": 0.5626784359288156,
+     "accuracy": 0.5627024525682555,
+     "per_split_macro_f1": {
+      "speed_low_12-27Hz": 0.3970749983562096,
+      "speed_mid_27-42Hz": 0.7749368187902507,
+      "speed_high_42-61Hz": 0.5284142214590253
+     },
+     "confusion": [
+      [
+       146,
+       1,
+       39,
+       43,
+       9,
+       3,
+       4
+      ],
+      [
+       5,
+       170,
+       8,
+       58,
+       59,
+       33,
+       3
+      ],
+      [
+       29,
+       2,
+       97,
+       43,
+       8,
+       3,
+       13
+      ],
+      [
+       39,
+       1,
+       2,
+       176,
+       3,
+       16,
+       5
+      ],
+      [
+       8,
+       36,
+       15,
+       69,
+       168,
+       39,
+       16
+      ],
+      [
+       1,
+       16,
+       4,
+       71,
+       21,
+       232,
+       6
+      ],
+      [
+       48,
+       0,
+       21,
+       111,
+       11,
+       23,
+       227
+      ]
+     ],
+     "seconds": 1162.0757021870013
+    }
+   }
+  }
+ }
+}

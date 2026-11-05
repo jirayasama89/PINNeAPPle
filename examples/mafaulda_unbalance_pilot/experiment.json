@@ -1,0 +1,128 @@
+{
+ "schema": "pinneapple.experiment/1",
+ "id": "examples/mafaulda_unbalance_pilot",
+ "title": "MAFAULDA pilot: calibrated inversion of the 1X response",
+ "description": "Unbalance mass from the 1X phasors of MAFAULDA (influence coefficients across speeds, a linear dissipative modal model, classical phase-free calibration, random forest), at seen speeds and in held-out speed bands, criteria fixed before the run.",
+ "domain": "vibration diagnostics",
+ "methods": [
+  "order tracking",
+  "influence coefficients",
+  "linear dissipative modal model",
+  "random forest"
+ ],
+ "modules": [
+  "pinneapple_analysis.inspection.rotating"
+ ],
+ "params": {},
+ "scripts": [],
+ "metrics": [
+  {
+   "name": "heldout_R2_linear_in_mass",
+   "value": 0.8899858335379988,
+   "unit": "1",
+   "how": "10-fold by run, 1X phasors of six accelerometers"
+  },
+  {
+   "name": "amplitude_seen_mae",
+   "value": 1.7037284963634793,
+   "unit": "g",
+   "how": "10-fold by run, 382 runs"
+  },
+  {
+   "name": "amplitude_unseen_interp_mae",
+   "value": 2.2979063411903766,
+   "unit": "g",
+   "how": "leave one of six speed bands out, inner bands"
+  },
+  {
+   "name": "spline_seen_mae",
+   "value": 2.667365256540791,
+   "unit": "g",
+   "how": "10-fold by run, 382 runs"
+  },
+  {
+   "name": "spline_unseen_interp_mae",
+   "value": 3.905934825688943,
+   "unit": "g",
+   "how": "leave one of six speed bands out, inner bands"
+  },
+  {
+   "name": "modal3_seen_mae",
+   "value": 2.7408561991923412,
+   "unit": "g",
+   "how": "10-fold by run, 382 runs"
+  },
+  {
+   "name": "modal3_unseen_interp_mae",
+   "value": 9.101305873123875,
+   "unit": "g",
+   "how": "leave one of six speed bands out, inner bands"
+  }
+ ],
+ "checks": [
+  {
+   "name": "tachometer: one pulse per revolution on every run",
+   "passed": true,
+   "value": null,
+   "reference": null,
+   "rtol": null,
+   "atol": null,
+   "max": null,
+   "min": null,
+   "detail": "",
+   "kind": "physics"
+  },
+  {
+   "name": "magnitude of the level unbalance grows with the added mass",
+   "passed": true,
+   "value": null,
+   "reference": null,
+   "rtol": null,
+   "atol": null,
+   "max": null,
+   "min": null,
+   "detail": "",
+   "kind": "physics"
+  },
+  {
+   "name": "pre-registered decision",
+   "passed": false,
+   "value": null,
+   "reference": null,
+   "rtol": null,
+   "atol": null,
+   "max": null,
+   "min": null,
+   "detail": "{'linear_in_mass': False, 'seen_speeds_physics_within_2g': False, 'unseen_speeds_physics_within_3g': False, 'modal_beats_amplitude_unseen': False}",
+   "kind": "verification"
+  }
+ ],
+ "files": {
+  "figures": [
+   "_out/level_unbalance.png",
+   "_out/mass_errors.png"
+  ],
+  "videos": [],
+  "viewers": [],
+  "data": [
+   "_out/report.md"
+  ]
+ },
+ "links": {
+  "script": "examples/mafaulda_unbalance_pilot/pilot.py"
+ },
+ "references": [],
+ "status": "not curated",
+ "lab": {},
+ "provenance": {
+  "source": "experiment()",
+  "git": "d7a4197",
+  "created": "2026-11-03T23:55:25Z",
+  "seconds": 497.343,
+  "error": null,
+  "environment": {
+   "python": "3.13.18",
+   "platform": "Linux-6.18.44-fc-v233-x86_64-with-glibc2.39"
+  }
+ }
+}

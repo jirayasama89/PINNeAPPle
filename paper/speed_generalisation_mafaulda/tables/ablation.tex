@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Ablation of the order-conditioned FNO at unseen speeds (macro-F1, seed 0; -- not run).}
+\label{tab:ablation}
+\footnotesize
+\begin{tabular}{lcc}
+\toprule
+Variant & T4 MAFAULDA & C1 COMFAULDA \\
+\midrule
+Full OC-FNO & 0.721 & 0.594 \\
+without FiLM speed conditioning & 0.827 & 0.699 \\
+without order channels & 0.749 & -- \\
+without gain augmentation & 0.739 & 0.591 \\
+\bottomrule
+\end{tabular}
+\end{table}

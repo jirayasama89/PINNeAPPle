@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Macro-F1 at unseen rotation speeds (Pb: each speed tercile held out in turn). Mean $\pm$ 95\% interval over seeds; single values: one seed.}
+\label{tab:unseen}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+Task & RF & MLP & KAN & FNO & HNN+RF & OC-FNO \\
+\midrule
+T1 misalignment & 0.876\,$\pm$\,0.009 & 0.838\,$\pm$\,0.029 & 0.858\,$\pm$\,0.016 & 0.800\,$\pm$\,0.137 & 0.629 & 0.763\,$\pm$\,0.028 \\
+T2 unbalance & 0.852\,$\pm$\,0.010 & 0.884\,$\pm$\,0.015 & 0.873\,$\pm$\,0.009 & 0.864\,$\pm$\,0.187 & 0.759 & 0.933\,$\pm$\,0.022 \\
+T3 bearings & 0.866\,$\pm$\,0.010 & 0.837\,$\pm$\,0.004 & 0.811\,$\pm$\,0.011 & 0.803\,$\pm$\,0.059 & 0.541 & 0.816\,$\pm$\,0.026 \\
+T4 all ten states & 0.878\,$\pm$\,0.003 & 0.817\,$\pm$\,0.006 & 0.824\,$\pm$\,0.017 & 0.800\,$\pm$\,0.043 & 0.508 & 0.763\,$\pm$\,0.058 \\
+C1 COMFAULDA & 0.634\,$\pm$\,0.008 & 0.690\,$\pm$\,0.010 & 0.641\,$\pm$\,0.020 & 0.690 & -- & 0.589\,$\pm$\,0.029 \\
+\bottomrule
+\end{tabular}}
+\end{table*}

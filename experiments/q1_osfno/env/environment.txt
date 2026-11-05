@@ -1,0 +1,6 @@
+python: Python 3.13.18
+os: Linux 6.18.44-fc-v233 x86_64
+cpu:  Intel(R) Xeon(R) Processor @ 2.80GHz x 4
+mem_gb: 15
+torch 2.15.0+cu132 | numpy 2.5.4 | scipy 1.18.1 | sklearn 1.9.1 | xgboost 3.4.1
+data sources: MAFAULDA https://www02.smt.ufrj.br/~offshore/mfs/database/mafaulda/full.zip (12896655242 bytes); COMFAULDA https://zenodo.org/api/records/8208454/files/COMFAULDA.zip/content (22995655942 bytes)

@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Macro-F1 when the test speeds are seen in training (Pa: stratified 5-fold by run). Mean $\pm$ 95\% interval over seeds (RF, MLP, KAN: 5; FNO: 3 on MAFAULDA); single values: one seed.}
+\label{tab:seen}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Task & RF & MLP & KAN & FNO & HNN+RF \\
+\midrule
+T1 misalignment & 0.988\,$\pm$\,0.003 & 0.985\,$\pm$\,0.003 & 0.986\,$\pm$\,0.003 & 0.970\,$\pm$\,0.058 & 0.758 \\
+T2 unbalance & 0.990\,$\pm$\,0.006 & 0.991\,$\pm$\,0.006 & 0.991\,$\pm$\,0.006 & 0.990\,$\pm$\,0.022 & 0.932 \\
+T3 bearings & 0.994\,$\pm$\,0.001 & 0.988\,$\pm$\,0.004 & 0.992\,$\pm$\,0.001 & 0.987\,$\pm$\,0.005 & 0.821 \\
+T4 all ten states & 0.992\,$\pm$\,0.001 & 0.986\,$\pm$\,0.001 & 0.989\,$\pm$\,0.002 & 0.975\,$\pm$\,0.015 & 0.760 \\
+C1 COMFAULDA & 0.944 & 0.938 & 0.938 & 0.913 & -- \\
+\bottomrule
+\end{tabular}}
+\end{table*}

@@ -1,0 +1,31 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=2.5cm]{geometry}
+\signature{First Author\\ on behalf of all authors}
+\address{Department, Institution\\ City, Country\\ first.author@institution.edu}
+\begin{document}
+\begin{letter}{The Editor-in-Chief\\ Measurement}
+\opening{Dear Editor,}
+
+We submit the manuscript \emph{``Do vibration-based fault classifiers generalise to unseen rotation speeds? A
+leakage-free benchmark of feature models, Kolmogorov--Arnold, Hamiltonian and order-conditioned Fourier neural operator
+networks on MAFAULDA and COMFAULDA''} for consideration as a research article in \emph{Measurement}.
+
+Accuracies close to 99\,\% are routinely reported on public machinery fault databases, but they are obtained with test
+recordings made at speeds already present in training. We measure, under splits that never share a recording and that
+hold out whole speed ranges, how much of that performance survives. Every model loses 0.11--0.32 macro-F1; a random
+forest on order-domain features remains the most accurate and stable model, an order-conditioned Fourier neural
+operator generalises clearly better for unbalance, and an ablation explains why the same speed conditioning hurts the
+other faults. We also show that compound faults are not recognised from single-fault training, and we document
+recording-session artefacts of MAFAULDA (tachometer faults, a drifting 1X phase reference, an anomalous accelerometer)
+that matter for any method using phase or channel-level information.
+
+The work concerns the measurement and evaluation of condition-monitoring methods, which we believe fits the scope of
+\emph{Measurement}. All hypotheses and decision criteria were written before the experiments, results that failed
+their criterion are reported, and the code, protocols and result files are openly available.
+
+The manuscript is original, has not been published and is not under consideration elsewhere. All authors approved the
+submission and declare no competing interests.
+
+\closing{Yours sincerely,}
+\end{letter}
+\end{document}

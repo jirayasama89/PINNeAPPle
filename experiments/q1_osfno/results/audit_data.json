@@ -1,0 +1,174 @@
+{
+ "mafaulda": {
+  "n_rows": 1951,
+  "n_errors": 0,
+  "errors": [],
+  "tach_excluded": 56,
+  "tach_excluded_by_folder": {
+   "overhang/cage_fault": 6,
+   "overhang/outer_race": 11,
+   "underhang/ball_fault": 37,
+   "underhang/cage_fault": 2
+  },
+  "tach_excluded_reason": {
+   "cv>5%": 40,
+   "cv>5%speed_ratio": 16
+  },
+  "n_used": 1895,
+  "folders_with_repeated_nominal_speed": {},
+  "exact_duplicate_files": [],
+  "near_duplicate_spectra_cos>0.9999": [],
+  "n_near_duplicates": 0,
+  "grid_points_cache": 1201,
+  "speed_range_hz": [
+   11.781303024478445,
+   80.2622556941023
+  ],
+  "states": {
+   "horizontal-misalignment": 197,
+   "imbalance": 333,
+   "normal": 49,
+   "overhang/ball_fault": 137,
+   "overhang/cage_fault": 188,
+   "overhang/outer_race": 188,
+   "underhang/ball_fault": 186,
+   "underhang/cage_fault": 188,
+   "underhang/outer_race": 184,
+   "vertical-misalignment": 301
+  },
+  "task_misalignment": {
+   "n": 547,
+   "counts": [
+    49,
+    197,
+    301
+   ],
+   "tercile_edges_hz": [
+    11.8,
+    27.99,
+    43.84,
+    60.73
+   ]
+  },
+  "task_unbalance": {
+   "n": 382,
+   "counts": [
+    49,
+    333
+   ],
+   "tercile_edges_hz": [
+    11.78,
+    27.92,
+    43.51,
+    60.52
+   ]
+  },
+  "task_bearings": {
+   "n": 1064,
+   "counts": [
+    49,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "tercile_edges_hz": [
+    11.9,
+    26.58,
+    41.15,
+    60.6
+   ]
+  },
+  "task_all": {
+   "n": 1895,
+   "counts": [
+    49,
+    333,
+    197,
+    301,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "tercile_edges_hz": [
+    11.78,
+    26.96,
+    42.33,
+    60.73
+   ]
+  }
+ },
+ "comfaulda": {
+  "n_rows": 2162,
+  "n_errors": 1,
+  "errors": [
+   [
+    "Single Faults/Vertical Misalignment/Vertical_Misalignment_1.27_mm.zip/18.78.csv",
+    "BadZipFile: CRC error in the published archive"
+   ]
+  ],
+  "folders_with_repeated_nominal_speed": {
+   "Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_6_g+Hor. Misalignment_1_mm.zip": {
+    "25.0": 2
+   },
+   "Normal_Condition/Normal_5.zip": {
+    "20.0": 2
+   }
+  },
+  "exact_duplicate_files": [
+   [
+    "Normal_Condition/Normal_1.zip/36.26.csv",
+    "Normal_Condition/Normal_1.zip/37.23.csv"
+   ],
+   [
+    "Single Faults/Horizontal Misalignment/Horizontal_misalignment_2_0mm.zip/18.07.csv",
+    "Single Faults/Horizontal Misalignment/Horizontal_misalignment_2_0mm.zip/19.88.csv"
+   ]
+  ],
+  "near_duplicate_spectra_cos>0.9999": [
+   [
+    "Normal_Condition/Normal_1.zip/36.26.csv",
+    "Normal_Condition/Normal_1.zip/37.23.csv",
+    0.9999999999969581
+   ]
+  ],
+  "n_near_duplicates": 1,
+  "grid_points_cache": 1201,
+  "speed_range_hz": [
+   12.351474955846856,
+   61.04877279242484
+  ],
+  "states": {
+   "unbalance+horizontal": 351,
+   "unbalance+vertical": 351,
+   "horizontal+vertical": 441,
+   "normal": 245,
+   "horizontal": 195,
+   "unbalance": 336,
+   "vertical": 242
+  },
+  "task_comfaulda7": {
+   "n": 2161,
+   "counts": [
+    245,
+    336,
+    195,
+    242,
+    351,
+    351,
+    441
+   ],
+   "tercile_edges_hz": [
+    12.35,
+    27.04,
+    42.42,
+    61.05
+   ]
+  }
+ }
+}
